@@ -153,6 +153,7 @@ body {
 
     .pledge-title h1 {
      font-size: 8em;
+     max-width: 640px;
     }
 
     .pledge-content {
@@ -163,6 +164,7 @@ body {
 
     .pledge-content p {
       font-size: 24px;
+      max-width: 640px;
     }
 
     .vertical-center {
