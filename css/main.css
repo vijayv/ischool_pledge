@@ -3,7 +3,6 @@
 html {
     color: #222;
     font-size: 1em;
-    line-height: 1.4;
 }
 
 ::-moz-selection {
@@ -97,6 +96,7 @@ body {
 .pledge-content {
   background-color: #EDE3DE;
   color: #242528;
+  line-height: 1.4;
   padding: 10%;
 }
 
@@ -106,7 +106,8 @@ body {
 }
 
 .footer-container footer {
-    /*color: white;*/
+    font-size: 10px;
+    margin: 20px 0;
     padding: 20px 0;
 }
 
