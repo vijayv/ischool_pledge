@@ -61,63 +61,8 @@ body {
 }
 
 .wrapper {
-    width: 90%;
-    margin: 0 5%;
-}
-
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
-.header-container {
-    border-bottom: 20px solid yellow;
-}
-
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
-}
-
-.header-container,
-.footer-container,
-.main aside {
-    background: #f16529;
-}
-
-.title {
-    color: white;
-}
-
-/* ==============
-    MOBILE: Menu
-   ============== */
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-
-    color: white;
-    background: #e44d26;
-}
-
-nav a:hover,
-nav a:visited {
-    color: white;
-}
-
-nav a:hover {
-    text-decoration: underline;
+    width: 100%;
+    margin: 0 0;
 }
 
 /* ==============
@@ -125,20 +70,43 @@ nav a:hover {
    ============== */
 
 .main {
-    padding: 30px 0;
+  padding: 0 0;
 }
 
 .main article h1 {
-    font-size: 2em;
+  margin: 0;
 }
 
-.main aside {
-    color: white;
-    padding: 0px 5% 10px;
+.main article p {
+  margin: 0;
+}
+
+.pledge-title {
+  background-color: #252628;
+  color: #CCCCCC;
+  padding: 5%;
+  text-align: center;
+}
+
+.pledge-title h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: 50px;
+ line-height: normal;
+}
+
+.pledge-content {
+  background-color: #EDE3DE;
+  color: #242528;
+  padding: 10%;
+}
+
+.pledge-content p {
+  font-family: 'Vollkorn', serif;
+  font-size: 16px;
 }
 
 .footer-container footer {
-    color: white;
+    /*color: white;*/
     padding: 20px 0;
 }
 
@@ -151,130 +119,57 @@ nav a:hover {
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-html {
-  background-color: #252120;
-  color: #E5DFC5;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', 'sans-serif';
-  font-size: 1.2em;
-  text-transform: uppercase;
-}
-
-body {
-  font-family: 'Open Sans', 'sans-serif';
-  font-size: 1.2em;
-}
-
-#pledge section {
-  margin-top: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
    Media Queries
    ========================================================================== */
 
 @media only screen and (min-width: 480px) {
 
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
+  /* ============
+      Intermediate: Main
+     ============ */
 
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
+     .pledge-title h1 {
+      font-size: 7em;
+     }
 
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
+     .pledge-content p {
+       font-size: 24px;
+     }
 }
 
-@media only screen and (min-width: 768px) {
-
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
-
-/* ============
-    WIDE: Menu
-   ============ */
-
-    .title {
-        float: left;
-    }
-
-    nav {
-        float: right;
-        width: 38%;
-    }
+@media only screen and (min-width: 1024px) {
 
 /* ============
     WIDE: Main
    ============ */
 
-    .main article {
-        float: left;
-        width: 57%;
+    .pledge-title {
+      float: left;
+      padding: 0;
+      text-align: center;
+      width: 50%;
     }
 
-    .main aside {
-        float: right;
-        width: 28%;
+    .pledge-title h1 {
+     font-size: 8em;
     }
-}
 
-@media only screen and (min-width: 1140px) {
+    .pledge-content {
+      float: right;
+      padding: 0 5%;
+      width: 40%;
+    }
 
-/* ===============
-    Maximal Width
-   =============== */
+    .pledge-content p {
+      font-size: 24px;
+    }
 
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
+    .vertical-center {
+      min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+      min-height: 100vh; /* These two lines are counted as one :-)       */
+
+      display: flex;
+      align-items: center;
     }
 }
 
