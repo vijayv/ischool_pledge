@@ -172,6 +172,10 @@ ul {
      max-width: 640px;
     }
 
+    .main article h1 {
+      margin: auto;
+    }
+
     .pledge-content {
       float: right;
       padding: 0 5%;
