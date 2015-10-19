@@ -124,6 +124,10 @@ ul {
 	list-style: none;
 }
 
+.intro-sentence {
+  font-style: italic;
+}
+
 /* ===============
     ALL: IE Fixes
    =============== */
