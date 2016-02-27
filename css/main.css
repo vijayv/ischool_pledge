@@ -168,8 +168,11 @@ ul {
     WIDE: Main
    ============ */
 
+    #pledge {
+      display: flex;
+    }
+
     .pledge-title {
-      float: left;
       padding: 0;
       width: 50%;
     }
@@ -184,7 +187,6 @@ ul {
     }
 
     .pledge-content {
-      float: right;
       padding: 0 5%;
       width: 40%;
     }
@@ -197,7 +199,6 @@ ul {
     .vertical-center {
       min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
       min-height: 100vh; /* These two lines are counted as one :-)       */
-
       display: flex;
       align-items: center;
     }
